@@ -25,7 +25,7 @@ a:hover {
 
 .main-nav {
   width: 100%;
-  background: white;
+  background: rgb(201, 201, 201);
   min-height: 30px;
   padding: 10px;
   position: fixed;
@@ -41,24 +41,30 @@ a:hover {
 }
 
 .nav .name {
+    padding-top: 8px;
     display: block;
     margin-right: auto;
     color: black;
+    border-radius: 5px;
+    background-color: white;
 }
 .nav li {
   padding: 5px 10px 10px 10px;
 }
 .nav a {
   transition: all .5s;
-  border: 1px solid red;
   color: black;
   padding: 2px;
+  border-radius: 5px;
+  background-color: white;
 }
 .nav a:hover {
   color: red;
+  transform: scale(1.025); /*this doesnt seem to work*/
 }
 .nav .name:hover {
   color: red;
+  transform: scale(1.025);
 }
 
 header {
@@ -66,6 +72,7 @@ header {
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
+  background-image: url(images/coding-wallpaper.jpeg);
 }
 header {
   line-height: 1.5;
@@ -75,11 +82,11 @@ header .profile-image {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid black;
+  border: 1px solid black;
   transition: all .5s;
 }
 header .profile-image:hover {
-  transform: scale(1.6) rotate(5deg);
+  transform: scale(1.6) rotate(365deg);
   border-color: red;
 }
 .tag {
@@ -88,6 +95,7 @@ header .profile-image:hover {
   border-radius: 5px;
   display: table;
   margin: 10px auto;
+  background-color: white;
 } 
 .tag:hover {
   transform: scale(1.2);
@@ -101,15 +109,11 @@ header .profile-image:hover {
   max-width: 500px;
   text-align: left;
   background: white;
-  border-bottom: 4px solid #ccc;
-  border-radius: 6px;
   transition: all .5s;
   color: black;
+  border: 1px solid white;
+  border-radius: 5px;
 }
-.card:hover {
-  border-color: #ff0000;
-}
-
 ul.skills {
   padding: 0;
   text-align: center;
@@ -217,4 +221,26 @@ h2 {
 
 }
 
+.glow-list {
+    color: black;
+}
 
+.glow-list:hover {
+    color: red;
+}
+
+.list {
+  border-left: 3px black solid;
+}
+
+.list:hover {
+  border-left-color: red;
+}
+
+body {
+  background-color: rgb(201, 201, 201);
+}
+
+.hobby-pics:hover {
+  transform: scale(1.3);
+}
